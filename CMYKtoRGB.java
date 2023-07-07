@@ -1,0 +1,21 @@
+public class CMYKtoRGB{
+   public static void main(String[] args) {
+       try{
+
+        double black = Double.parseDouble(args[0]);
+        double  cyan = Double.parseDouble(args[1]);
+        double  magenta = Double.parseDouble(args[2]);
+        double  yellow = Double.parseDouble(args[3]);
+
+        double white=1-black;
+        double red=255.0*white*(1-cyan);
+        double green=255.0*white*(1-magenta);
+        double blue=255.0*white*(1-yellow);
+            System.out.println("red = " + (int) red);
+            System.out.println("green = " + (int) green);
+            System.out.println("blue = " + (int) blue);
+       }catch (NumberFormatException e){
+           System.out.println(e);
+       }
+   }
+}
