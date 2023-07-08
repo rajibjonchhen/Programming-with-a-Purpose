@@ -15,6 +15,6 @@ public class GreatCircle{
         double distance = r * Math.acos(Math.sin(x1Rad) * Math.sin(x2Rad)
                 + Math.cos(x1Rad) * Math.cos(x2Rad) * Math.cos(y1Rad - y2Rad));
        
-        System.out.println("the great-circle distance is " + distance + "kilometers");
+        System.out.println(distance + " kilometers");
     }
 }
