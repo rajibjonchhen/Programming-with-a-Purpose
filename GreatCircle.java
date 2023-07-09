@@ -1,7 +1,5 @@
-public class GreatCircle
-{
-    public static void main(String[] args)
-    {
+public class GreatCircle {
+    public static void main(String[] args) {
         double x1 = Double.parseDouble(args[0]);
         double y1 = Double.parseDouble(args[1]);
         double x2 = Double.parseDouble(args[2]);
