@@ -4,15 +4,15 @@ public class RandomWalker {
         int x = 0;
         int y = 0;
         int steps = 0;
-        while(Math.abs(x) + Math.abs(y) != distance){
-        double randomPossibility = Math.floor(Math.random()*100);
-            if(randomPossibility <= 25){
+        while (Math.abs(x) + Math.abs(y) != distance) {
+            double randomPossibility = Math.floor(Math.random() * 100);
+            if (randomPossibility <= 25) {
                 x += 1;
-            }else if(randomPossibility <= 50){
+            } else if (randomPossibility <= 50) {
                 x -= 1;
-            }else if(randomPossibility <= 75){
+            } else if (randomPossibility <= 75) {
                 y += 1;
-            }else {
+            } else {
                 y -= 1;
             }
             steps++;
